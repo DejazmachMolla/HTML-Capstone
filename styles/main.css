@@ -17,8 +17,19 @@ a {
 }
 
 footer {
-  border: 1px solid slateblue;
   min-height: 20vh;
+  display: flex;
+  color: white;
+  align-items: center;
+}
+
+footer img {
+  max-width: 200px;
+  margin: 2rem;
+}
+
+footer p:last-of-type {
+  display: none;
 }
 
 .main-nav > a {
@@ -300,6 +311,9 @@ footer {
   background-color: #000;
 }
 
+footer {
+  background-color: #2e2e2e;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -450,5 +464,10 @@ footer {
 
   .speaker-grid > article {
     margin-bottom: 2rem;
+  }
+
+  footer p:last-of-type {
+    display: block;
+    margin-top: 1rem;
   }
 }
