@@ -52,26 +52,24 @@ footer {
 }
 
 .welcome {
-  border: 1px solid green;
   min-height: 90vh;
   margin-top: 6.5rem;
   background: url(/images/meeting1.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;  
+  background-attachment: fixed; 
 }
 
 .welcome > div {
-  border: 1px solid pink;
   min-height: 90vh;
   background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .welcome h1 {
-  margin-top: 3rem;
   font-size: 3rem;
   color: #000;
   background-color: rgba(255, 255, 255, 0.7);
@@ -86,13 +84,21 @@ footer {
   padding: 1rem 1rem;
   color: white;
   border: 2px solid white;
-  margin-top: 1rem;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
 .welcome p {
   color: white;
+}
+
+.welcome p:not(:last-of-type) {
+  margin-top: 1rem;
+}
+
+.welcome b {
+  background-color: white;
+  padding: 0 .25rem;
 }
 
 .meeting-time {
@@ -106,8 +112,8 @@ footer {
   text-align: center;
 }
 
-.main-program {
-  border: 1px solid black;
+.main-programs {
+  background: url(/images/main-prog-bg.png) repeat;
   min-height: 50vh;
 }
 
@@ -208,6 +214,10 @@ footer {
     margin-top: 6.5rem;
   }
 
+  .welcome > div {
+    align-items: flex-start;
+  }
+
   .welcome p:first-of-type {
     padding: 1.5rem 1rem;
     line-height: 1.5rem;
@@ -223,8 +233,7 @@ footer {
 
   .welcome h1 {
     display: block;
-    margin-top: 6rem;
-    font-size: 3rem;
+    font-size: 4rem;
     padding: 2rem 1.2rem;
   }
 
@@ -248,8 +257,14 @@ footer {
     text-align: left;
   }
 
-  .welcome div {
-    display: block;
+  .programs {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
   }
 
+  .program {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
 }
