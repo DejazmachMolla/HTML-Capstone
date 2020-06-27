@@ -115,6 +115,7 @@ footer {
 .main-programs {
   background: url(/images/main-prog-bg.png) repeat;
   min-height: 50vh;
+  text-align: center;
 }
 
 .speakers {
@@ -146,6 +147,61 @@ footer {
 .border-red-3 {
   border: 3px solid #EC5242;
   padding: 5px;
+}
+
+.program {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 1rem;
+  padding: 1rem 1rem 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 5fr;
+}
+
+.program p {
+  color: white;
+}
+
+.program > * {
+  padding-bottom: 1rem;
+  text-align: left;
+  align-self: center;
+}
+
+.program h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.program p {
+  margin-left: 5px;
+}
+
+.red-bottom {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.main-programs > div > h2 {
+  text-align: center;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: .5rem;
+}
+
+.red-bottom > div {
+  width: 33%;
+  height: 2px;
+  background-color: #EC5242;
+  margin: auto;
+}
+
+.main-programs > a {
+  color: white;
+  text-decoration: underline;
+  display: inline-block;
+  margin: 2rem 0 3rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -260,11 +316,16 @@ footer {
   .programs {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
+    gap: 2px;
   }
 
   .program {
+    display: block;
+    margin-bottom: 0;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .program > * {
+    text-align: center;
   }
 }
