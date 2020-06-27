@@ -84,6 +84,7 @@ footer {
   padding: 1rem 1rem;
   color: white;
   border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.4);
   font-size: 1rem;
   line-height: 1.5rem;
 }
@@ -115,12 +116,30 @@ footer {
 .main-programs {
   background: url(/images/main-prog-bg.png) repeat;
   min-height: 50vh;
-  text-align: center;
 }
 
 .speakers {
-  border: 1px solid salmon;
-  min-height: 50vh;
+  min-height: 100vh;
+}
+
+.speaker-desc {
+  margin-left: 135px;
+  text-align: left;
+}
+
+.speaker-desc > * {
+  margin-bottom: .5rem;
+}
+
+.speaker-desc > p:first-of-type {
+  text-emphasis: italic;
+  color: #EC5242;
+}
+
+.speaker-desc > div {
+  width: 30px;
+  height: 3px;
+  background-color: #d3d3d3;
 }
 
 .partners {
@@ -138,6 +157,16 @@ footer {
 
 .black {
   color: #272A31;
+}
+
+.common-section {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.common-section h2 {
+  padding-top: 2rem;
+  padding-bottom: .5rem;
 }
 
 .bold-700 {
@@ -158,6 +187,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 3fr 5fr;
   border: 2px solid transparent;
+  align-content: center;
 }
 
 .program:hover {
@@ -188,7 +218,7 @@ footer {
   margin-left: 5px;
 }
 
-.red-bottom {
+.common-section > div:first-of-type {
   display: inline-block;
   margin-bottom: 2rem;
 }
@@ -196,11 +226,9 @@ footer {
 .main-programs > div > h2 {
   text-align: center;
   color: white;
-  padding-top: 2rem;
-  padding-bottom: .5rem;
 }
 
-.red-bottom > div {
+.common-section > div:first-of-type > div {
   width: 33%;
   height: 2px;
   background-color: #EC5242;
@@ -219,6 +247,41 @@ footer {
 .main-programs > a:first-of-type {
   display: none;
 }
+
+.speaker-grid article {
+  position: relative;;
+}
+
+.speaker-grid > article {
+  margin-bottom: 4rem;
+}
+
+.img-back-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+}
+
+.speaker-grid article img {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 100px;
+
+}
+
+.img-back-grid div {
+  width: 5px;
+  height: 5px;
+}
+
+.img-back-grid div:nth-child(2n+1) {
+  background-color: #000;
+}
+
+
 
 @media screen and (min-width: 768px) {
   .social-link-nav img {
@@ -354,5 +417,19 @@ footer {
     text-decoration: underline;
     display: block;
     padding: 2rem 0 3rem;
+  }
+
+  .speaker-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .img-back-grid div:nth-child(2n+1) {
+    background-color: #d3d3d3;
+  }
+
+  .speaker-grid > article {
+    margin-bottom: 2rem;
   }
 }
