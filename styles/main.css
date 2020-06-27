@@ -42,6 +42,9 @@ footer {
   align-items: center;
   position: fixed;
   top: 0;
+  background-color: white;
+  box-shadow: none;
+  z-index: 3;
 }
 
 .page-pad-sm {
@@ -52,6 +55,55 @@ footer {
   border: 1px solid green;
   min-height: 90vh;
   margin-top: 6.5rem;
+  background: url(/images/meeting1.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+
+.welcome > div {
+  border: 1px solid pink;
+  min-height: 90vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome h1 {
+  margin-top: 3rem;
+  font-size: 3rem;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.7);
+  mix-blend-mode: screen;
+  font-weight: 800;
+  text-transform: uppercase;
+  overflow: hidden;
+  padding: 1.5rem 1rem;
+}
+
+.welcome p:first-of-type {
+  padding: 1rem 1rem;
+  color: white;
+  border: 2px solid white;
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.welcome p {
+  color: white;
+}
+
+.meeting-time {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.welcome h1,
+.welcome p {
+  width: 85%;
+  text-align: center;
 }
 
 .main-program {
@@ -144,14 +196,36 @@ footer {
     position: fixed;
     top: 0;
     background-color: #626262;
+    z-index: 3;
   }
 
   .main-nav {
     top: 2rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
   }
 
   .welcome {
-    margin-top: 8.5rem;
+    margin-top: 6.5rem;
+  }
+
+  .welcome p:first-of-type {
+    padding: 1.5rem 1rem;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .meeting-time {
+    padding: 0;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .welcome h1 {
+    display: block;
+    margin-top: 6rem;
+    font-size: 3rem;
+    padding: 2rem 1.2rem;
   }
 
   .page-pad-lg {
@@ -167,4 +241,15 @@ footer {
     width: calc(80% - 200px);
     margin: auto;
   }
+
+  .welcome h1,
+  .welcome p {
+    width: 75%;
+    text-align: left;
+  }
+
+  .welcome div {
+    display: block;
+  }
+
 }
