@@ -159,8 +159,13 @@ footer {
   grid-template-columns: 1fr 3fr 5fr;
 }
 
-.program p {
+.program p,
+.program i {
   color: white;
+}
+
+.program i {
+  font-size: 2rem;
 }
 
 .program > * {
