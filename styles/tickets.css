@@ -1,0 +1,64 @@
+.dates {
+  min-height: 50vh;
+}
+
+.lunch {
+  position: relative;
+}
+
+.sub-title {
+  border: 1px solid #d3d3d3;
+  height: 2rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  width: 40%;
+  margin: auto;
+}
+
+.sub-title span {
+  color: #EC5242;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+
+.sub-title p {
+  font-size: .7rem;
+}
+
+.bullet {
+  width: 4px;
+  height: 4px;
+  background-color: #EC5242;
+  transform: rotate(45deg);
+}
+
+.abs-container {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 15px);
+}
+
+.lunch-top {
+  width: 30px;
+  height: 30px;
+  background-color: #EC5242;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -15px;
+  transform: rotate(-45deg);
+}
+
+.mid-red {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  border-top: 2px solid #EC5242;
+  border-right: 2px solid #EC5242;
+}

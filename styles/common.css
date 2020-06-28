@@ -37,6 +37,10 @@ footer p:last-of-type {
   padding: 5px;
 }
 
+.gray-bg {
+  background-color: #f7f7f7;
+}
+
 .right-lg-nav ul a {
   font-weight: bold;
 }

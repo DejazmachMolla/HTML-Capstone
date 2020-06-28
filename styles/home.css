@@ -190,6 +190,7 @@
   left: 15px;
   top: 15px;
   width: 100px;
+  border-radius: 100%;
   transition: 300ms all ease-out;
 }
 
@@ -197,6 +198,7 @@
   left: 0;
   top: 0;
   width: 115px;
+  border-radius: 0;
 }
 
 @media screen and (min-width: 768px) {
