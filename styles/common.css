@@ -32,6 +32,14 @@ footer p:last-of-type {
   display: none;
 }
 
+.border-red-3 {
+  border: 3px solid #EC5242;
+  padding: 5px;
+}
+
+.right-lg-nav ul a {
+  font-weight: bold;
+}
 .main-nav > a {
   display: block;
   width: 40px;
@@ -58,7 +66,7 @@ footer p:last-of-type {
 }
 
 main > section:first-of-type {
-  margin-top: 7.5rem;
+  margin-top: 6.5rem;
 }
 
 .page-pad-sm {

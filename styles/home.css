@@ -119,15 +119,6 @@
   margin: 1rem;
 }
 
-.bold-700 {
-  font-weight: 700;
-}
-
-.border-red-3 {
-  border: 3px solid #EC5242;
-  padding: 5px;
-}
-
 .program {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.1);
