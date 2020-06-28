@@ -66,11 +66,11 @@ footer p:last-of-type {
   top: 0;
   background-color: white;
   box-shadow: none;
-  z-index: 3;
+  z-index: 30;
 }
 
 main > section:first-of-type {
-  margin-top: 6.5rem;
+  margin-top: 7.5rem;
 }
 
 .page-pad-sm {
@@ -187,7 +187,7 @@ footer {
     position: fixed;
     top: 0;
     background-color: #626262;
-    z-index: 3;
+    z-index: 30;
   }
 
   .main-nav {
