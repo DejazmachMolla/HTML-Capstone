@@ -109,7 +109,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-
+  flex-direction: column;
 }
 
 .partners img {
@@ -273,6 +273,10 @@
 
   .speaker-grid > article {
     margin-bottom: 2rem;
+  }
+
+  .partners-list {
+    flex-direction: row;
   }
 }
 

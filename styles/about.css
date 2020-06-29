@@ -2,8 +2,9 @@
   background-color: #f7f7f7;
   padding: 3rem 0;
 }
+
 .intro p:first-of-type {
-  padding: 1rem 1rem;
+  padding: 1rem;
   color: #272A31;
   border: 2px solid #d3d3d3;
   background-color: white;
@@ -105,11 +106,23 @@ section > p:first-of-type {
     font-weight: bold;
   }
 
+  .intro p:first-of-type {
+    width: 90%;
+    margin: auto;
+  }
+
   section > p:first-of-type {
     width: 70%;
   }
 
   .confs-container {
     flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .intro p:first-of-type {
+    width: 80%;
+    padding: 1.5rem;
   }
 }

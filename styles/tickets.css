@@ -94,6 +94,7 @@
 
 .stroke-container {
   position: relative;
+  display: none;
   /* border: 1px solid #EC5242; */
 }
 .table-container {
@@ -109,20 +110,22 @@
 
 .bottom-hide {
   width: 100%;
-  height: 30px;
+  height: 40px;
   background-color: #f7f7f7;
   position: absolute;
   top: 480px;
   z-index: 20;
+  left: 0;
 }
 
 
 .top-hide {
   width: 100%;
-  height: 10vh;
+  height: 70px;
   background-color: #f7f7f7;
   position: absolute;
-  top: 160px;
+  top: 150px;
+  left: 0;
   z-index: 20;
 }
 
@@ -147,8 +150,12 @@
   z-index: 20;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 936px) {
+  .stroke-container {
+    display: block;
+  }
+
   .red-blue div {
-    transform: rotate(30deg);
+    transform: rotate(20deg);
   }
 }
