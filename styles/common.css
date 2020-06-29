@@ -44,7 +44,7 @@ footer p:last-of-type {
   flex-direction: column;
   padding-left: 20xp;
   left: -200px;
-
+  transition: 200ms ease-in-out;
 }
 
 .slide-nav li {
@@ -109,6 +109,10 @@ nav > button {
   text-align: left;
   padding: 0;
   border: none;
+}
+
+nav > button:focus {
+  outline: none;
 }
 
 nav > button img {
