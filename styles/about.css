@@ -5,6 +5,7 @@
 
 .intro p:first-of-type {
   padding: 1rem;
+  margin-bottom: 1rem;
   color: #272A31;
   border: 2px solid #d3d3d3;
   background-color: white;

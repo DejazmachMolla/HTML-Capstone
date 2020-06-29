@@ -28,6 +28,10 @@ footer img {
   margin: 2rem 1rem 2rem 0;
 }
 
+footer p {
+  font-size: 0.7rem;
+}
+
 footer p:last-of-type {
   display: none;
 }
@@ -194,6 +198,10 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  footer p {
+    font-size: 0.7rem;
+  }
+
   .social-link-nav img {
     height: 1rem;
   }
