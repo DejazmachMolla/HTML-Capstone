@@ -37,6 +37,13 @@ footer p:last-of-type {
   display: none;
 }
 
+button:hover,
+a:hover,
+label:hover,
+label > input:hover {
+  cursor: pointer;
+}
+
 .sm-nav {
   position: fixed;
   background-color: #272a31;
