@@ -1,11 +1,14 @@
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid black;
   border: 1px solid #d3d3d3;
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   padding: 5px;
   text-align: left;
 }
@@ -17,7 +20,7 @@ th, td {
 table {
   width: 100%;
   height: 100%;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .dates {
@@ -29,6 +32,17 @@ table {
 
 .lunch {
   position: relative;
+}
+
+.lunch button {
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #ec5242;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
 
 .sub-title {
@@ -44,20 +58,20 @@ table {
 }
 
 .sub-title span {
-  color: #EC5242;
+  color: #ec5242;
   margin-right: 0.5rem;
   margin-left: 0.5rem;
   font-weight: bold;
 }
 
 .sub-title p {
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .bullet {
   width: 4px;
   height: 4px;
-  background-color: #EC5242;
+  background-color: #ec5242;
   transform: rotate(45deg);
 }
 
@@ -70,7 +84,7 @@ table {
 .lunch-top {
   width: 30px;
   height: 30px;
-  background-color: #EC5242;
+  background-color: #ec5242;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,8 +99,8 @@ table {
   width: 8px;
   border-left: 2px solid white;
   border-bottom: 2px solid white;
-  border-top: 2px solid #EC5242;
-  border-right: 2px solid #EC5242;
+  border-top: 2px solid #ec5242;
+  border-right: 2px solid #ec5242;
 }
 
 .red-blue {
@@ -98,17 +112,17 @@ table {
   margin: auto;
 }
 
+.red-blue div {
+  width: 3px;
+  transform: rotate(10deg);
+}
+
 .red-blue > div:nth-child(2n+1) {
-  background-color: #EC5242;
+  background-color: #ec5242;
 }
 
 .red-blue > div:nth-child(2n+2) {
   background-color: #1d315e;
-}
-
-.red-blue div {
-  width: 3px;
-  transform: rotate(10deg);
 }
 
 .black-bg {
@@ -135,7 +149,6 @@ table {
   width: 100%;
   height: 40px;
   background-color: #f7f7f7;
-  /* background-color: rgba(0,0,0, 0.3); */
   position: absolute;
   top: 450px;
   z-index: 20;
@@ -146,7 +159,6 @@ table {
   width: 100%;
   height: 70px;
   background-color: #f7f7f7;
-  /* background-color: rgba(0,0,0, 0.3); */
   position: absolute;
   top: 150px;
   left: 0;
@@ -157,7 +169,6 @@ table {
   width: calc(50% - 230px);
   height: 233px;
   background-color: #f7f7f7;
-  /* background-color: rgba(0,0,0, 0.3); */
   position: absolute;
   top: 168px;
   left: 0;
@@ -168,7 +179,6 @@ table {
   width: calc(50% - 230px);
   height: 233px;
   background-color: #f7f7f7;
-  /* background-color: rgba(0,0,0, 0.3); */
   position: absolute;
   top: 168px;
   left: calc(50% + 230px);
@@ -180,11 +190,11 @@ table {
   margin-bottom: 2rem;
   padding-bottom: 2rem;
 }
+
 .day-lunch h4 {
   background-color: #f6f6f6;
   padding: 1rem;
   margin-bottom: 1rem;
-
 }
 
 .lunch-selection {
@@ -232,6 +242,7 @@ table {
   .dates {
     overflow: auto;
   }
+
   .sub-title {
     border: 1px solid #d3d3d3;
     height: 2rem;

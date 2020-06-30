@@ -4,7 +4,7 @@
   background: url(/images/meeting1.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; 
+  background-attachment: fixed;
 }
 
 .welcome > div {
@@ -28,6 +28,33 @@
   margin-top: 2rem;
 }
 
+.welcome h1,
+.welcome p {
+  width: 85%;
+  text-align: center;
+}
+
+.meeting-time + p {
+  margin-bottom: 2rem;
+}
+
+.welcome p {
+  color: white;
+}
+
+.program p {
+  margin-left: 5px;
+}
+
+.program p,
+.program i {
+  color: white;
+}
+
+.program i {
+  font-size: 2rem;
+}
+
 .welcome p:first-of-type {
   padding: 1rem 1rem;
   color: white;
@@ -37,32 +64,18 @@
   line-height: 1.5rem;
 }
 
-.welcome p {
-  color: white;
-}
-
 .welcome p:not(:last-of-type) {
   margin-top: 1rem;
 }
 
 .welcome b {
   background-color: white;
-  padding: 0 .25rem;
+  padding: 0 0.25rem;
 }
 
 .meeting-time {
   font-size: 1.2rem;
   font-weight: 700;
-}
-
-.meeting-time + p {
-  margin-bottom: 2rem;
-}
-
-.welcome h1,
-.welcome p {
-  width: 85%;
-  text-align: center;
 }
 
 .main-programs {
@@ -81,12 +94,12 @@
 }
 
 .speaker-desc > * {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .speaker-desc > p:first-of-type {
   text-emphasis: italic;
-  color: #EC5242;
+  color: #ec5242;
 }
 
 .speaker-desc > div {
@@ -133,15 +146,7 @@
 
 .program:hover {
   border: 2px solid white;
-}
-
-.program p,
-.program i {
-  color: white;
-}
-
-.program i {
-  font-size: 2rem;
+  cursor: pointer;
 }
 
 .program > * {
@@ -155,10 +160,6 @@
   font-weight: 700;
 }
 
-.program p {
-  margin-left: 5px;
-}
-
 .main-programs > div > h2 {
   text-align: center;
   color: white;
@@ -167,7 +168,7 @@
 .join-program {
   display: inline-block;
   padding: 1rem;
-  background-color: #EC5242;
+  background-color: #ec5242;
   color: white;
   font-size: 1.5rem;
   margin-bottom: 2rem;
@@ -178,7 +179,7 @@
 }
 
 .speaker-grid article {
-  position: relative;;
+  position: relative;
 }
 
 .speaker-grid > article {
@@ -208,6 +209,12 @@
     align-items: flex-start;
   }
 
+  .welcome h1,
+  .welcome p {
+    width: 85%;
+    text-align: left;
+  }
+
   .welcome p:first-of-type {
     padding: 1.5rem 1rem;
     line-height: 1.5rem;
@@ -221,21 +228,11 @@
     line-height: 2rem;
   }
 
-  .meeting-time+p {
-    margin-bottom: 3rem;
-  }
-
   .welcome h1 {
     display: block;
     font-size: 3rem;
     padding: 1.2rem;
     margin-top: 4rem;
-  }
-
-  .welcome h1,
-  .welcome p {
-    width: 85%;
-    text-align: left;
   }
 
   .programs {
@@ -281,6 +278,11 @@
 }
 
 @media screen and (min-width: 1260px) {
+  .welcome h1,
+  .welcome p {
+    width: 75%;
+  }
+
   .welcome p:first-of-type {
     padding: 2rem 1.2rem;
     line-height: 1.6rem;
@@ -292,9 +294,4 @@
     font-size: 4rem;
     padding: 2rem 1.2rem;
   }
-
-  .welcome h1,
-  .welcome p {
-    width: 75%;
-  }
-} 
+}

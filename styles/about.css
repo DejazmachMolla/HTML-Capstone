@@ -3,12 +3,14 @@
   padding: 3rem 0;
 }
 
-.intro p:first-of-type {
-  padding: 1rem;
-  margin-bottom: 1rem;
-  color: #272A31;
-  border: 2px solid #d3d3d3;
-  background-color: white;
+.intro p,
+.intro a,
+.intro i {
+  line-height: 1.5rem;
+}
+
+.conf p {
+  font-size: 0.7rem;
 }
 
 section > p:first-of-type {
@@ -19,17 +21,19 @@ section > p:first-of-type {
   font-size: 1rem;
 }
 
+.intro p:first-of-type {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: #272a31;
+  border: 2px solid #d3d3d3;
+  background-color: white;
+}
+
 .mo-logo img {
   max-width: 250px;
   border: 2px solid #d3d3d3;
   border-radius: 3px;
   margin-bottom: 2rem;
-}
-
-.intro p,
-.intro a,
-.intro i {
-  line-height: 1.5rem;
 }
 
 .intro a,
@@ -73,10 +77,6 @@ section > p:first-of-type {
   font-size: 1.5rem;
 }
 
-.conf p {
-  font-size: .7rem;
-}
-
 .orange-bg {
   height: 100%;
   width: 100%;
@@ -100,20 +100,20 @@ section > p:first-of-type {
   background-position: center;
 }
 
-
 @media screen and (min-width: 768px) {
   .intro h2 {
     font-size: 4rem;
     font-weight: bold;
   }
 
+  section > p:first-of-type {
+    width: 70%;
+  }
+
   .intro p:first-of-type {
     width: 90%;
     margin: auto;
-  }
-
-  section > p:first-of-type {
-    width: 70%;
+    margin-bottom: 2rem;
   }
 
   .confs-container {
