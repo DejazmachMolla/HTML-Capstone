@@ -33,7 +33,9 @@ footer p {
   font-size: 0.7rem;
 }
 
-footer p:last-of-type {
+footer p:last-of-type,
+.social-link-nav,
+.lg-nav {
   display: none;
 }
 
@@ -99,10 +101,6 @@ label > input:hover {
   background-color: #f7f7f7;
 }
 
-.social-link-nav {
-  display: none;
-}
-
 .main-nav {
   width: 100%;
   display: flex;
@@ -152,10 +150,6 @@ label > input:hover {
 
 .page-pad-sm {
   padding: 0 1.5rem;
-}
-
-.lg-nav {
-  display: none;
 }
 
 main > section:first-of-type {
