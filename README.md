@@ -4,14 +4,22 @@
 
 ![screenshot](./images/Mockup.png)
 
-## Live Demo
+## Demo
 
 [Live Demo Link](https://hardcore-dubinsky-bab964.netlify.app)
+
+[Demo Video](https://www.youtube.com/watch?v=kr0hmQKF7b0)
 
 ## Built With
 
 - HTML5
 - CSS3
+
+# Requirements
+
+- At least three pages
+- Each page should have link to the others
+- Mobile first responsive design
 
 ## Getting Started
 
