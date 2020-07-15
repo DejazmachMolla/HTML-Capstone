@@ -1,3 +1,9 @@
+@font-face {
+  font-family: Cocogoose;
+  font-weight: bold;
+  src: url("./../fonts/Cocogoose_trial.otf") format("opentype");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +20,10 @@ li {
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  font-family: 'Cocogoose', sans-serif;
 }
 
 footer {
