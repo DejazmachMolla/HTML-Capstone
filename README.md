@@ -2,11 +2,11 @@
 
 > This is a capstone project for the Microverse HTML and CSS Assessment created using the design info found [https://www.behance.net/gallery/29845175/CC-Global-Summit-2015](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
 
-![screenshot](./images/HTML_Capstone.png)
+![screenshot](./images/Mockup.png)
 
 ## Live Demo
 
-[Live Demo Link](https://cocky-wing-468423.netlify.app/)
+[Live Demo Link](https://hardcore-dubinsky-bab964.netlify.app)
 
 ## Built With
 
