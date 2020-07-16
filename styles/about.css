@@ -1,0 +1,129 @@
+.intro {
+  background-color: #f7f7f7;
+  padding: 3rem 0;
+}
+
+.intro p,
+.intro a,
+.intro i {
+  line-height: 1.5rem;
+}
+
+.conf p {
+  font-size: 0.7rem;
+}
+
+section > p:first-of-type {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.intro p:first-of-type {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: #272a31;
+  border: 2px solid #d3d3d3;
+  background-color: white;
+}
+
+.mo-logo img {
+  max-width: 250px;
+  border: 2px solid #d3d3d3;
+  border-radius: 3px;
+  margin-bottom: 2rem;
+}
+
+.intro a,
+.intro i {
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+}
+
+.intro a {
+  text-decoration: underline;
+}
+
+.intro i {
+  position: relative;
+  top: 2px;
+}
+
+.past-confs {
+  border-top: 2px solid #d3d3d3;
+}
+
+.confs-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.conf {
+  width: 225px;
+  height: 150px;
+  color: white;
+  margin: 1rem;
+}
+
+.conf h4 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.orange-bg {
+  height: 100%;
+  width: 100%;
+  background-color: #ec534288;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mo-2018 {
+  background: url(/images/mo2018.jpg) no-repeat;
+  background-color: #ec534288;
+  background-size: cover;
+  background-position: center;
+}
+
+.mo-2019 {
+  background: url(/images/mo2019.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .intro h2 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  section > p:first-of-type {
+    width: 70%;
+  }
+
+  .intro p:first-of-type {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  .confs-container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .intro p:first-of-type {
+    width: 80%;
+    padding: 1.5rem;
+  }
+}

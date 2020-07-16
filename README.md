@@ -2,16 +2,24 @@
 
 > This is a capstone project for the Microverse HTML and CSS Assessment created using the design info found [https://www.behance.net/gallery/29845175/CC-Global-Summit-2015](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
 
-![screenshot](./images/HTML_Capstone.png)
+![screenshot](./images/Mockup.png)
 
-## Live Demo
+## Demo
 
-[Live Demo Link](https://cocky-wing-468423.netlify.app/)
+[Live Demo Link](https://hardcore-dubinsky-bab964.netlify.app)
+
+[Demo Video](https://www.youtube.com/watch?v=kr0hmQKF7b0)
 
 ## Built With
 
 - HTML5
 - CSS3
+
+# Requirements
+
+- At least three pages
+- Each page should have link to the others
+- Mobile first responsive design
 
 ## Getting Started
 

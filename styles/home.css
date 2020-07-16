@@ -1,0 +1,295 @@
+
+.welcome {
+  min-height: 90vh;
+  background: url(/images/meeting1.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.welcome > div {
+  min-height: 90vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome h1 {
+  font-size: 2rem;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.7);
+  mix-blend-mode: screen;
+  font-weight: 800;
+  text-transform: uppercase;
+  overflow: hidden;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.welcome h1,
+.welcome p {
+  width: 85%;
+  text-align: center;
+}
+
+.meeting-time + p {
+  margin-bottom: 2rem;
+}
+
+.welcome p {
+  color: white;
+}
+
+.program p {
+  margin-left: 5px;
+}
+
+.program p,
+.program i {
+  color: white;
+}
+
+.program i {
+  font-size: 2rem;
+}
+
+.welcome p:first-of-type {
+  padding: 1rem 1rem;
+  color: white;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.welcome p:not(:last-of-type) {
+  margin-top: 1rem;
+}
+
+.welcome b {
+  background-color: white;
+  padding: 0 0.25rem;
+}
+
+.meeting-time {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.main-programs {
+  background: url(/images/main-prog-bg.png) repeat;
+  min-height: 50vh;
+}
+
+.speakers {
+  background-color: #f8f8f8;
+}
+
+.speaker-desc {
+  margin-left: 135px;
+  text-align: left;
+}
+
+.speaker-desc > * {
+  margin-bottom: 0.5rem;
+}
+
+.speaker-desc > p:first-of-type {
+  text-emphasis: italic;
+  color: #ec5242;
+}
+
+.speaker-desc > div {
+  width: 30px;
+  height: 3px;
+  background-color: #d3d3d3;
+}
+
+.partners {
+  background-color: #414246;
+}
+
+.partners h2 {
+  color: white;
+}
+
+.partners-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.partners img {
+  max-width: 200px;
+  max-height: 100px;
+  border-radius: 6px;
+  margin: 1rem;
+}
+
+.program {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 1rem;
+  padding: 1rem 1rem 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 5fr;
+  border: 2px solid transparent;
+  align-content: center;
+}
+
+.program:hover {
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.program > * {
+  padding-bottom: 1rem;
+  text-align: left;
+  align-self: center;
+}
+
+.program h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.main-programs > div > h2 {
+  text-align: center;
+  color: white;
+}
+
+.join-program {
+  display: inline-block;
+  padding: 1rem;
+  background-color: #ec5242;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.main-programs > a:first-of-type {
+  display: none;
+}
+
+.speaker-grid article {
+  position: relative;
+}
+
+.speaker-grid > article {
+  margin-bottom: 4rem;
+}
+
+.speaker-grid article img {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 100px;
+  transition: 300ms all ease-out;
+}
+
+.speaker-grid article img:hover {
+  left: 0;
+  top: 0;
+  width: 115px;
+}
+
+@media screen and (min-width: 768px) {
+  .welcome {
+    margin-top: 6.5rem;
+  }
+
+  .welcome > div {
+    align-items: flex-start;
+  }
+
+  .welcome h1,
+  .welcome p {
+    width: 85%;
+    text-align: left;
+  }
+
+  .welcome p:first-of-type {
+    padding: 1.5rem 1rem;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .meeting-time {
+    padding: 0;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .welcome h1 {
+    display: block;
+    font-size: 3rem;
+    padding: 1.2rem;
+    margin-top: 4rem;
+  }
+
+  .programs {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3px;
+  }
+
+  .program {
+    display: block;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .program > * {
+    text-align: center;
+  }
+
+  .join-program {
+    display: none;
+  }
+
+  .main-programs > a:first-of-type {
+    color: white;
+    text-decoration: underline;
+    display: block;
+    padding: 2rem 0 3rem;
+  }
+
+  .speaker-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .speaker-grid > article {
+    margin-bottom: 2rem;
+  }
+
+  .partners-list {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .welcome h1,
+  .welcome p {
+    width: 75%;
+  }
+
+  .welcome p:first-of-type {
+    padding: 2rem 1.2rem;
+    line-height: 1.6rem;
+    font-size: 1.2rem;
+  }
+
+  .welcome h1 {
+    display: block;
+    font-size: 4rem;
+    padding: 2rem 1.2rem;
+  }
+}
